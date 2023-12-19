@@ -19,9 +19,12 @@ body {
 article {
   display: grid;
   gap: 20px;
-  background-color: blueviolet;
+  max-width: 1326px;
+  width: calc(100% - 2 * 12px);
+  background-color: teal;
   border-radius: 10px;
-  margin: 10px;
+  margin: auto;
+  margin-bottom: 20px;
   padding: 15px;
   color:white;
 }

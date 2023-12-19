@@ -47,7 +47,7 @@ const PostList = () => {
 
     return (
         <>
-            <h1> Infinite Scroll </h1>
+            <h1 className="center"> Infinite Scroll </h1>
             {content}
             {isFetchingNextPage && <p className="center">Loading More Posts...</p>}
             <p className="center"><a href="#top">Back to top</a></p>
