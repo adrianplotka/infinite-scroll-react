@@ -1,8 +1,9 @@
+import PostList from './PostList';
 import './index.css';
 
 function App() {
   return (
-<p>bla bla</p>
+    <PostList />
   );
 }
 
