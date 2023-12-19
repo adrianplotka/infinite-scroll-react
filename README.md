@@ -1,3 +1,8 @@
+It's a simple webside with infinite scroll componen
+
+# Demo
+[Project webside - click to redirect](https://adrianplotka.github.io/infinite-scroll-react/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
