@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/infinite-scroll-react/static/css/main.8d1a9786.css",
-    "main.js": "/infinite-scroll-react/static/js/main.8feca357.js",
+    "main.css": "/infinite-scroll-react/static/css/main.9b8cb7cb.css",
+    "main.js": "/infinite-scroll-react/static/js/main.eade053c.js",
     "index.html": "/infinite-scroll-react/index.html",
-    "main.8d1a9786.css.map": "/infinite-scroll-react/static/css/main.8d1a9786.css.map",
-    "main.8feca357.js.map": "/infinite-scroll-react/static/js/main.8feca357.js.map"
+    "main.9b8cb7cb.css.map": "/infinite-scroll-react/static/css/main.9b8cb7cb.css.map",
+    "main.eade053c.js.map": "/infinite-scroll-react/static/js/main.eade053c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d1a9786.css",
-    "static/js/main.8feca357.js"
+    "static/css/main.9b8cb7cb.css",
+    "static/js/main.eade053c.js"
   ]
 }
