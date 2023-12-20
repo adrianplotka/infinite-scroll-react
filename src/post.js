@@ -16,6 +16,6 @@ const Post = React.forwardRef(({ post }, ref) => {
         : <StyledArticle>{postBody}</StyledArticle>
 
     return content
-})
+});
 
 export default Post;

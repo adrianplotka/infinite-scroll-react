@@ -17,7 +17,7 @@ const PostList = () => {
         getNextPageParam: (lastPage, allPages) => {
             return lastPage.length ? allPages.length + 1 : undefined
         }
-    })
+    });
 
     const intObserved = useRef()
     const lastPostRef = useCallback(post => {
@@ -30,7 +30,7 @@ const PostList = () => {
                 console.log("We are near the last post!")
                 fetchNextPage()
             }
-        })
+        });
 
         if (post) intObserved.current.observe(post)
     }, [isFetchingNextPage, fetchNextPage, hasNextPage])
@@ -44,7 +44,7 @@ const PostList = () => {
             }
             return <Post key={post.id} post={post} />
         })
-    })
+    });
 
     return (
         <Container>
@@ -61,6 +61,6 @@ const PostList = () => {
             <Text center><a href="#top">Back to top</a></Text>
         </Container>
     )
-}
+};
 
-export default PostList
+export default PostList;

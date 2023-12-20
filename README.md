@@ -1,4 +1,4 @@
-It's a simple webside with infinite scroll componen
+It's a simple webside with infinite scroll componend
 
 # Demo
 [Project webside - click to redirect](https://adrianplotka.github.io/infinite-scroll-react/)
