@@ -2,7 +2,7 @@ import { useRef, useCallback } from "react"
 import Post from "./post"
 import { useInfiniteQuery } from "react-query"
 import { getPostsPage } from "./api/axios"
-import { Text, MainHeader, Container } from "./styled"
+import { Text, MainHeader, Container, Loader, LoadContainer } from "./styled"
 
 const PostList = () => {
     const {
@@ -50,7 +50,14 @@ const PostList = () => {
         <Container>
             <MainHeader> Infinite Scroll </MainHeader>
             {content}
-            {isFetchingNextPage && <Text center>Loading More Posts...</Text>}
+            {isFetchingNextPage &&
+                <>
+                    <Text center>Loading More Posts...</Text>
+                    <LoadContainer>
+                        <Loader />
+                    </LoadContainer>
+                </>
+            }
             <Text center><a href="#top">Back to top</a></Text>
         </Container>
     )
