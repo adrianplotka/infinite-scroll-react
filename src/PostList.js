@@ -2,6 +2,7 @@ import { useRef, useCallback } from "react"
 import Post from "./post"
 import { useInfiniteQuery } from "react-query"
 import { getPostsPage } from "./api/axios"
+import { Text, MainHeader, Container } from "./styled"
 
 const PostList = () => {
     const {
@@ -46,12 +47,12 @@ const PostList = () => {
     })
 
     return (
-        <>
-            <h1 className="center"> Infinite Scroll </h1>
+        <Container>
+            <MainHeader> Infinite Scroll </MainHeader>
             {content}
-            {isFetchingNextPage && <p className="center">Loading More Posts...</p>}
-            <p className="center"><a href="#top">Back to top</a></p>
-        </>
+            {isFetchingNextPage && <Text center>Loading More Posts...</Text>}
+            <Text center><a href="#top">Back to top</a></Text>
+        </Container>
     )
 }
 

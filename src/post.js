@@ -1,18 +1,19 @@
 import React from 'react'
+import { Text, ArticleHeader, StyledArticle } from './styled'
 
 const Post = React.forwardRef(({ post }, ref) => {
 
     const postBody = (
         <>
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
-            <p>Post number: {post.id}</p>
+            <ArticleHeader>{post.title}</ArticleHeader>
+            <Text>{post.body}</Text>
+            <Text small>Post number: {post.id}</Text>
         </>
     )
 
     const content = ref
-        ? <article ref={ref}>{postBody}</article>
-        : <article>{postBody}</article>
+        ? <StyledArticle ref={ref}>{postBody}</StyledArticle>
+        : <StyledArticle>{postBody}</StyledArticle>
 
     return content
 })
